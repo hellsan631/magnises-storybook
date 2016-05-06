@@ -1,0 +1,31 @@
+{
+  "node": true,
+  "esnext": true,
+  "bitwise": true,
+  "camelcase": false,
+  "eqeqeq": true,
+  "eqnull": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": "nofunc",
+  "newcap": true,
+  "nonew": true,
+  "noarg": true,
+  "regexp": true,
+  "undef": true,
+  "unused": false,
+  "trailing": true,
+  "sub": true,
+  "maxlen": 120,
+  "globals": {
+    "angular": true,
+    "Vivus": true,
+    "Velocity": true,
+    "$": true,
+    "swal": true,
+    "Materialize": true,
+    "navigator": true,
+    "EventSource": true,
+    "md5": true
+  }
+}

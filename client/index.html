@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8" />
+  <title>Magnises</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <meta property="description"      content="Your Magnises card provides access to the spaces, places, and people you need to know. Every black, metal card is personalized, serving as a payment tool while granting access to exclusive members-only benefits and experiences." />
+  <meta property="og:url"           content="https://www.magnises.com/" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Magnises" />
+  <meta property="og:description"   content="Your Magnises card provides access to the spaces, places, and people you need to know. Every black, metal card is personalized, serving as a payment tool while granting access to exclusive members-only benefits and experiences." />
+  <meta property="og:image"         content="https://www.magnises.com/assets/img2/magnises-logo.png" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Raleway:300,500,800|Source+Sans+Pro:300,400,600,700" rel="stylesheet" type="text/css" />
+
+  <!-- bower:css -->
+
+  <!-- endinject -->
+
+  <!-- inject:css -->
+  <!-- endinject -->
+
+</head>
+<body ng-class="$root.modalOpen ? 'modal-open' : ''">
+
+  <ui-view
+    name="main"
+    autoscroll="true"
+    class="anim-in-out"
+    data-anim-sync="true"
+    data-anim-speed="1000">
+  </ui-view>
+
+  <!-- bower:js -->
+
+  <!-- endinject -->
+
+  <!-- inject:js -->
+
+  <!-- endinject -->
+
+</body>
+</html>
