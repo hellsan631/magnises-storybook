@@ -1,0 +1,29 @@
+.btn {
+  font-weight:500;
+  font-size: 1.25em;
+  line-height:0;
+  letter-spacing: 0.2em;
+  border-radius: 5px;
+
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.btn-full {
+  width:100%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  position: relative;
+
+  .preloader-svg-wrapper {
+    position: absolute;
+    left:0;
+    right:0;
+    width:100%;
+    margin-top: -0.5em;
+
+    img {
+      height:1em;
+    }
+  }
+}

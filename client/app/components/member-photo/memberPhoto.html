@@ -1,0 +1,42 @@
+<div class="row extra-margin-bottom">
+  <div
+    class="col s12 center-align"
+    ngf-drop
+    ngf-select
+    ng-model="dm.profileImage"
+    ngf-pattern="'image/*'"
+    ngf-accept="'image/*'"
+    ngf-validate-fn="dm.validate($file)">
+
+    <div
+      ngf-thumbnail="dm.profileImage || dm.placeholder"
+      ngf-as-background="true"
+      class="profile-image">
+    </div>
+
+  </div>
+</div>
+
+<div class="row extra-margin-bottom">
+  <div class="col s12 center-align">
+    <button
+      type="submit"
+      ng-disabled="dm.loading !== false"
+      class="btn btn-flat btn-full secondary-action waves-effect waves-primary"
+      ngf-select
+      ng-model="dm.profileImage"
+      name="profileImage"
+      ngf-pattern="'image/*'"
+      ngf-accept="'image/*'"
+      ngf-validate-fn="dm.validate($file)">
+
+      <span ng-if="!dm.loading">Update Profile Photo</span>
+
+      <div ng-if="dm.loading === 'loading'" class="preloader-svg-wrapper animate-bounce">
+        <img src="images/svg-loaders/three-dots.svg" />
+      </div>
+
+      <span ng-if="dm.loading === 'error'">Error</span>
+    </button>
+  </div>
+</div>

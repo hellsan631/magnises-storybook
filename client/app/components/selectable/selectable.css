@@ -1,0 +1,15 @@
+selectable .btn-flat {
+  padding: 40px 0 !important;
+  background-color: #f5f5f5;
+  line-height: 0;
+  border: 2px solid #e2e2e2;
+  display: block;
+  width:auto;
+  font-size: 16px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+}
+
+selectable {
+  display:block;
+}

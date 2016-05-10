@@ -1,0 +1,27 @@
+.member-card-pocket {
+  position: relative;
+  z-index: 10;
+
+  min-height: 150px;
+  min-width: 200px;
+}
+
+.member-card-pocket .backplate{
+  position: relative;
+  display:block;
+  margin:0 auto;
+}
+
+.member-card-pocket .nameplate {
+  position: absolute;
+  bottom:15%;
+  left:0;
+  z-index: 12;
+
+  margin-top: 0;
+  width:100%;
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+}

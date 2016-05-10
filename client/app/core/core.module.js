@@ -12,16 +12,19 @@
       'blocks.exception',
       'blocks.logger',
       'blocks.router',
+      /* Router Modules */
+      'ui.router',
+      'ct.ui.router.extras.core',
+      'permission',
+      'permission.ui',
+      'anim-in-out',
+      'uiRouterStyles',
       /* 3rd Party Modules */
       'angularMoment',
       'LocalForageModule',
-      'permission',
       'ui.materialize',
-      'ui.router',
-      'anim-in-out',
-      'angularPayments',
-      'uiRouterStyles',
       'ui.mask',
+      'angularPayments',
       'ngFileUpload'
     ]);
 

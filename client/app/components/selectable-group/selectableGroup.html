@@ -1,0 +1,14 @@
+<div ng-click="sm.monoSelect()">
+  <div class="col s12 input-field">
+    <label class="active">{{ sm.options.mainLabel }}</label>
+  </div>
+  <selectable
+    class="col no-padding"
+    ng-class="sm.optionLength"
+    ng-repeat="option in sm.options.values"
+    selected="sm.selected"
+    value="option.value"
+    checked="option.checked">
+    {{ option.label || option.value }}
+  </selectable>
+</div>

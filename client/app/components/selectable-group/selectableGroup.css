@@ -1,0 +1,33 @@
+selectable-group selectable:not(:last-child) a {
+  margin-right:1.6em;
+}
+
+selectable-group selectable {
+  white-space: nowrap;
+}
+
+selectable-group {
+  display:block;
+}
+
+@media only screen and (max-width: 720px) {
+  .row selectable-group selectable.col.s3 {
+    width:50%;
+  }
+
+  .row selectable-group selectable.col.s3 a {
+    margin-right: 0em;
+    margin-bottom: 0.3em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  selectable-group selectable.col {
+    width:100% !important;
+  }
+
+  selectable-group selectable:not(:last-child) a {
+    margin-right:0;
+    margin-bottom: 0.3em;
+  }
+}

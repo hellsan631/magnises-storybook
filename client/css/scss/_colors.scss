@@ -1,0 +1,57 @@
+/* colors.scss */
+$primary-color-action: #f7d044;
+$secondary-color-action: #5f5f5f;
+$primary-color-dark: #212121;
+$primary-color-light: #F1F1F1;
+$disabled-color: #DFDFDF;
+
+$white-background: #e2e4e5;
+
+.primary-action {
+  color: #fff !important;
+  background-color: $primary-color-action !important;
+
+  &:disabled {
+    background-color: $disabled-color !important;
+    color: rgba(0,0,0,0.26) !important;
+  }
+}
+
+.secondary-action {
+  color: #fff !important;
+  background-color: $secondary-color-action !important;
+
+  &:disabled {
+    background-color: $disabled-color !important;
+    color: rgba(0,0,0,0.26) !important;
+  }
+}
+
+.waves-effect.waves-primary .waves-ripple {
+  background-color: rgba($primary-color-action, 0.65);
+}
+
+.primary-black {
+  color: #f1f1f1;
+  background-color: $primary-color-dark !important;
+}
+
+.primary-black-text {
+  color: $primary-color-dark !important;
+}
+
+.primary-white-background {
+  color: $white-background !important;
+}
+
+.waves-effect.waves-white .waves-ripple {
+  background-color: rgba($white-background, 0.75);
+}
+
+.primary-white {
+  background-color: $primary-color-light !important;
+}
+
+.primary-white-text {
+  color: $primary-color-light !important;
+}

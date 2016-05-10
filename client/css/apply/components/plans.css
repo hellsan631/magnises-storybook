@@ -1,0 +1,45 @@
+img.stripe-power {
+  max-width: 150px;
+  display: inline-block;
+  margin-top: 20px;
+  padding-right: 30px; }
+
+img.aes-enabled {
+  max-width: 150px;
+  margin: 15px 0;
+  width: 100%; }
+
+.vertical-rule {
+  border-left: 1px solid #ddd; }
+  @media only screen and (max-width: 600px) {
+    .vertical-rule {
+      border-left: none; } }
+
+.secure-text {
+  font-size: 0.95em;
+  font-weight: 400;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 0.2px;
+  color: #444; }
+
+.charge-amount {
+  display: block;
+  text-align: center;
+  font-size: 5.5em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #666;
+  line-height: 0.8;
+  padding: 0;
+  margin: 0.1em 0;
+  margin-top: 0.3em; }
+  .charge-amount .dollar {
+    vertical-align: top;
+    font-size: 33%;
+    font-style: italic; }
+  .charge-amount .per {
+    vertical-align: bottom;
+    font-size: 33%; }
+  .charge-amount .amount {
+    margin: 0 -0.3em; }

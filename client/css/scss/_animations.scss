@@ -1,0 +1,291 @@
+.slide-in.ng-enter {
+  /* standard transition code */
+  @include materialBounce();
+  opacity:0;
+}
+.slide-in.ng-enter-stagger {
+  /* this will have a 100ms delay between each successive leave animation */
+  transition-delay: 0.1s;
+
+  /* As of 1.4.4, this must always be set: it signals ngAnimate
+    to not accidentally inherit a delay property from another CSS class */
+  transition-duration: 0s;
+}
+.slide-in.ng-enter.ng-enter-active {
+  /* standard transition styles */
+  opacity:1;
+}
+
+.animate-longer {
+  @include transition-delay(2s);
+}
+
+.animate-bounce {
+  &.ng-enter {
+    @include animation(bounceIn 850ms);
+  }
+  &.ng-leave {
+    @include animation(zoomOut 850ms);
+  }
+}
+
+.animate-fade {
+  &.ng-enter {
+    @include animation(zoomIn 450ms);
+  }
+  &.ng-leave {
+    @include animation(zoomOut 450ms);
+  }
+}
+
+.animate-zoom {
+  @include materialBounce();
+
+  &.ng-enter {
+    max-height: 1000px;
+    @include animation(zoomIn 550ms);
+  }
+
+  &.ng-leave {
+    max-height: 0;
+    margin:0;
+    overflow: hidden;
+    @include animation(zoomOut 550ms);
+  }
+}
+
+$speed: 500ms;
+
+.anim-in-out {
+
+	&.anim-in-setup {
+
+		&.anim-swap, .anim-swap {
+		}
+
+		&.anim-fade, .anim-fade {
+			opacity: 0;
+		}
+
+		&.anim-slide-left, .anim-slide-left {
+      overflow:hidden;
+      position: absolute;
+			transform: translateX(100%);
+		}
+
+		&.anim-slide-right, .anim-slide-right {
+			transform: translateX(-100%);
+		}
+
+		&.anim-slide-below, .anim-slide-below {
+			transform: translateY(20px);
+		}
+
+		&.anim-slide-below-fade, .anim-slide-below-fade {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		&.anim-slide-above-fade, .anim-slide-above-fade {
+			opacity: 0;
+			transform: translateY(-40px);
+		}
+
+		&.anim-zoom-out, .anim-zoom-out {
+			transform: scale(0.95);
+		}
+
+		&.anim-zoom-in, .anim-zoom-in {
+			transform: scale(1.025);
+		}
+
+		&.anim-zoom-out-full, .anim-zoom-out-full {
+			transform: scale(0);
+		}
+
+		&.anim-zoom-in-full, .anim-zoom-in-full {
+			transform: scale(10);
+		}
+
+	}
+
+	&.anim-in {
+
+		&.anim-swap, .anim-swap {
+		}
+
+		&.anim-fade, .anim-fade {
+			opacity: 1;
+			transition: all $speed;
+		}
+
+		&.anim-slide-left, .anim-slide-left {
+			transform: translateX(0);
+			transition: all $speed;
+		}
+
+		&.anim-slide-right, .anim-slide-right {
+			transform: translateX(0);
+			transition: all $speed;
+		}
+
+		&.anim-slide-below, .anim-slide-below {
+			transform: translateY(0);
+			transition: all $speed;
+		}
+
+		&.anim-slide-below-fade, .anim-slide-below-fade {
+			opacity: 1;
+			transform: translateY(0);
+			transition: all $speed;
+		}
+
+    &.anim-slide-above-fade, .anim-slide-above-fade {
+			opacity: 1;
+			transform: translateY(0);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-out, .anim-zoom-out {
+			transform: scale(1);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-in, .anim-zoom-in {
+			transform: scale(1);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-out-full, .anim-zoom-out-full {
+			transform: scale(1);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-in-full, .anim-zoom-in-full {
+			transform: scale(1);
+			transition: all $speed;
+		}
+
+	}
+
+	&.anim-out-setup {
+
+		&.anim-swap, .anim-swap {
+		}
+
+		&.anim-fade, .anim-fade {
+			opacity: 1;
+			transition: all $speed;
+		}
+
+		&.anim-slide-left, .anim-slide-left {
+      overflow:hidden;
+      position: absolute;
+			transform: translateX(0);
+			transition: all $speed;
+		}
+
+		&.anim-slide-right, .anim-slide-right {
+			transform: translateX(0);
+			transition: all $speed;
+		}
+
+		&.anim-slide-below, .anim-slide-below {
+			transform: translateY(0);
+			transition: all $speed;
+		}
+
+		&.anim-slide-below-fade, .anim-slide-below-fade {
+			opacity: 1;
+			transform: translateY(0);
+			transition: all $speed;
+		}
+
+    &.anim-slide-above-fade, .anim-slide-above-fade {
+			opacity: 1;
+			transform: translateY(0);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-out, .anim-zoom-out {
+			transform: scale(1);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-in, .anim-zoom-in {
+			transform: scale(1);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-out-full, .anim-zoom-out-full {
+			transform: scale(1);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-in-full, .anim-zoom-in-full {
+			transform: scale(1);
+			transition: all $speed;
+		}
+
+	}
+
+	&.anim-out {
+
+		&.anim-swap, .anim-swap {
+			display: none;
+		}
+
+		&.anim-fade, .anim-fade {
+			opacity: 0;
+			transition: all $speed;
+		}
+
+		&.anim-slide-left, .anim-slide-left {
+			transform: translateX(100%);
+			transition: all $speed;
+		}
+
+		&.anim-slide-right, .anim-slide-right {
+			transform: translateX(100%);
+			transition: all $speed;
+		}
+
+		&.anim-slide-below, .anim-slide-below {
+			transform: translateY(20px);
+			transition: all $speed;
+		}
+
+		&.anim-slide-below-fade, .anim-slide-below-fade {
+			opacity: 0;
+			transform: translateY(20px);
+			transition: all $speed;
+		}
+
+    &.anim-slide-above-fade, .anim-slide-above-fade {
+			opacity: 0;
+			transform: translateY(-40px);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-out, .anim-zoom-out {
+			transform: scale(0.95);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-in, .anim-zoom-in {
+			transform: scale(1.025);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-out-full, .anim-zoom-out-full {
+			transform: scale(0);
+			transition: all $speed;
+		}
+
+		&.anim-zoom-in-full, .anim-zoom-in-full {
+			transform: scale(10);
+			transition: all $speed;
+		}
+
+	}
+
+}

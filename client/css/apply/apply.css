@@ -1,0 +1,175 @@
+/* _functions.scss */
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*** Global ***/
+/*
+* Clearfix
+*/
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    content: '';
+    display: table;
+    line-height: 0;
+    clear: both; }
+
+/*
+* Truncate Text
+*/
+.introduction {
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 1.6em;
+  width: 90%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto; }
+
+.addon-title {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #bbb;
+  text-transform: uppercase;
+  padding-bottom: 20px; }
+
+.cc-disclamer {
+  font-size: 1.1em;
+  line-height: 1.3em;
+  width: 90%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto; }
+
+.success-outro {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  letter-spacing: 0.3px;
+  width: 90%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto; }
+
+.medium-margin-bottom {
+  margin-bottom: 40px; }
+
+.dropdown-content li > span {
+  color: #888; }
+
+.progress-row {
+  margin-top: 40px; }
+  .progress-row [data-hint] {
+    margin-left: 79.5%;
+    margin-bottom: -10px; }
+  .progress-row .hint--always:after {
+    border-radius: 2px; }
+  .progress-row .progress {
+    border-radius: 3px;
+    height: 8px;
+    background-color: #e2e2e2; }
+    .progress-row .progress .determinate {
+      border-radius: 3px; }
+
+.application-container {
+  max-width: 840px;
+  display: block;
+  margin: 0 auto; }
+  .application-container .select-wrapper input.select-dropdown {
+    height: 4em;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #e2e2e2;
+    border: 2px solid #e2e2e2;
+    color: #888;
+    border-radius: 4px;
+    padding-left: 1.75em;
+    width: calc(100% - 1.75em - 4px);
+    margin-bottom: 2.1em; }
+  .application-container .select-wrapper span.caret {
+    right: 2em;
+    top: 3em;
+    z-index: 50; }
+  .application-container .btn-full {
+    max-width: 400px;
+    display: inline-block; }
+  .application-container .title-text {
+    font-weight: 100;
+    letter-spacing: 3px; }
+  .application-container input:not([type]),
+  .application-container input[type=text],
+  .application-container input[type=password],
+  .application-container input[type=email],
+  .application-container input[type=url],
+  .application-container input[type=time],
+  .application-container input[type=date],
+  .application-container input[type=datetime-local],
+  .application-container input[type=tel],
+  .application-container input[type=number],
+  .application-container input[type=search],
+  .application-container textarea.materialize-textarea {
+    height: 4em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #e2e2e2;
+    color: #444;
+    -webkit-transition: all 150ms cubic-bezier(0.62, -0.005, 0.26, 0.995);
+    -moz-transition: all 150ms cubic-bezier(0.62, -0.005, 0.26, 0.995);
+    transition: all 150ms cubic-bezier(0.62, -0.005, 0.26, 0.995); }
+  .application-container input:not([type]):disabled,
+  .application-container input:not([type])[readonly="readonly"],
+  .application-container input[type=text]:disabled,
+  .application-container input[type=text][readonly="readonly"],
+  .application-container input[type=password]:disabled,
+  .application-container input[type=password][readonly="readonly"],
+  .application-container input[type=email]:disabled,
+  .application-container input[type=email][readonly="readonly"],
+  .application-container input[type=url]:disabled,
+  .application-container input[type=url][readonly="readonly"],
+  .application-container input[type=time]:disabled,
+  .application-container input[type=time][readonly="readonly"],
+  .application-container input[type=date]:disabled,
+  .application-container input[type=date][readonly="readonly"],
+  .application-container input[type=datetime-local]:disabled,
+  .application-container input[type=datetime-local][readonly="readonly"],
+  .application-container input[type=tel]:disabled,
+  .application-container input[type=tel][readonly="readonly"],
+  .application-container input[type=number]:disabled,
+  .application-container input[type=number][readonly="readonly"],
+  .application-container input[type=search]:disabled,
+  .application-container input[type=search][readonly="readonly"],
+  .application-container textarea.materialize-textarea:disabled,
+  .application-container textarea.materialize-textarea[readonly="readonly"] {
+    color: rgba(0, 0, 0, 0.26);
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.26); }
+  .application-container input:-webkit-autofill, .application-container textarea:-webkit-autofill, .application-container select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #e2e2e2 inset !important;
+    background-color: #e2e2e2;
+    color: #444;
+    -webkit-text-fill-color: #444; }
+  .application-container input[cc-value] {
+    height: 3em;
+    padding-left: 1.25em;
+    padding-right: 10px;
+    font-size: 1.5em;
+    font-weight: 300; }
+  .application-container .bold {
+    font-weight: 600; }
+
+.save {
+  display: block;
+  text-align: right;
+  color: #888;
+  font-style: italic;
+  font-size: 1.1em;
+  padding-top: 0.8em;
+  padding-right: 0.1em; }

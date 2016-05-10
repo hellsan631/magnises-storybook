@@ -1,0 +1,59 @@
+@import "functions";
+@import "colors";
+@import "typography";
+@import "animations";
+@import "dialogs";
+@import "grid";
+@import "buttons";
+@import "forms";
+@import "toastr";
+@import "landing";
+
+body {
+  background-color: #f5f5f5;
+}
+
+[ng-click] {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.material-bounce {
+  @include materialBounce();
+}
+
+hr {
+  border:none;
+  outline:none;
+  height:1px;
+  background: #ccc;
+}
+
+ui-view {
+  display:block;
+}
+
+.medium-logo {
+  margin-top: 2em;
+  max-width: 350px;
+  opacity: 0.7;
+  display: inline-block;
+}
+
+.dashing{
+  display: inline;
+}
+
+.dashing::before, .dashing::after {
+  content: "   ";
+  height:1px;
+  width: 0.8em;
+  margin: 13px;
+  background:#a69695;
+  display: inline-block;
+  vertical-align: middle;
+}
